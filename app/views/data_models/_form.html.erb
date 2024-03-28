@@ -1,0 +1,17 @@
+<fieldset style='width:900px'>
+<legend>Create Data Model</legend>
+<%= form_for :data_model, :builder => LabelFormBuilder do |e| %>
+<table>
+<tr>
+<td>
+<%= SrTranslate.sr_t("Name")%>
+<td><%= e.text_field :name,:style => "width:155px"  %> </td>
+</tr>
+<tr>
+<td> <%= SrTranslate.sr_t("Data")%></td>
+<td><%= e.text_area :data,:style=>"width:155px" %></td>
+</tr>
+<% end%>
+</table>
+</fieldset>
+

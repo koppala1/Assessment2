@@ -1,0 +1,12 @@
+<div class = "heading">
+    Edit Data Model
+</div>
+<br>
+<%=link_to "Back" , {:action => "list"}%>
+<%= form_tag({:action => 'update',:id => params[:id] }, :multipart => true ) do %>
+  <%= render :partial => 'form' %>
+  <br/>
+<br>
+   <center><%= submit_tag 'Update',:class=>"buttons",:id => "save_button"%></center>
+</br>
+<% end %>

@@ -1,0 +1,15 @@
+<div class = "heading">
+   Data Model
+</div>
+<%= link_to "Back" ,:action => "list"%>
+
+<div style="float: left;">
+        <%#= form_tag ({:action => 'create' do %>
+     <%= form_tag({:action=>'create'},:multipart=>true) do %>
+            <%= render :partial => 'form' %>
+<br>
+<center><%= submit_tag 'Save',:class=>"buttons",:id => "save_button"%></center>
+</br>
+        <% end %>
+</div>
+

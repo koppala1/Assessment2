@@ -1,0 +1,8 @@
+<% for column DataModel.content_columns %>
+    <p>
+        <b><%= column.name %>:</b>
+        <%= column.data%>
+    </p>
+<% end %>
+<%= link_to 'Edit', :action => 'edit', :id => @task %> |<%= link_to 'Back', :action => 'list' %>
+
